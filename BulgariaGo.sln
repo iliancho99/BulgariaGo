@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulgariaGo", "BulgariaGo.csproj", "{952E482A-D203-CB5C-D07C-54AE7C3EDF12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulgariaGo.Editor", "BulgariaGo.Editor.csproj", "{7FD69952-0FB5-C5B3-7936-3A9FC322CA3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{952E482A-D203-CB5C-D07C-54AE7C3EDF12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{952E482A-D203-CB5C-D07C-54AE7C3EDF12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{952E482A-D203-CB5C-D07C-54AE7C3EDF12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{952E482A-D203-CB5C-D07C-54AE7C3EDF12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FD69952-0FB5-C5B3-7936-3A9FC322CA3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FD69952-0FB5-C5B3-7936-3A9FC322CA3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FD69952-0FB5-C5B3-7936-3A9FC322CA3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FD69952-0FB5-C5B3-7936-3A9FC322CA3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
