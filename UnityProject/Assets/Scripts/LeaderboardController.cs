@@ -92,6 +92,7 @@ namespace Assets.Scripts
             {
                 this.Notification.GetComponentInChildren<Text>().text = "Възникнала е грешка при връзката със сървъра!";
                 this.Notification.SetActive(true);
+                this.LoadingBar.SetActive(false);
             }
             else
             {
@@ -112,6 +113,7 @@ namespace Assets.Scripts
             {
                 this.Notification.GetComponentInChildren<Text>().text = "Възникнала е грешка при връзката със сървъра!";
                 this.Notification.SetActive(true);
+                this.LoadingBar.SetActive(false);
             }
             else
             {
@@ -123,7 +125,7 @@ namespace Assets.Scripts
                 var headerLayoutElement = headerScrollBar.GetComponent<LayoutElement>();
                 headerLayoutElement.minHeight = Camera.main.pixelHeight / 6;
 
-                var response = hs_get.text.Split(new[] {'\n'}, StringSplitOptions.RemoveEmptyEntries);
+                var response = hs_get.text.Split(new[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
                 var position = 1;
                 for (var i = 1; i < response.Length; i += 2, position++)
                 {
@@ -138,7 +140,7 @@ namespace Assets.Scripts
                     textComponents[1].text = response[i - 1];
                     textComponents[2].text = response[i];
                     currentPlayer.transform.parent = Content.transform;
-                   
+
                     var playerLayoutElement = currentPlayer.GetComponent<LayoutElement>();
                     playerLayoutElement.minHeight = Camera.main.pixelHeight / 8;
 
@@ -156,6 +158,7 @@ namespace Assets.Scripts
             {
                 this.Notification.GetComponentInChildren<Text>().text = "Потребителското е с минимална дължина 6 символа!";
                 this.Notification.SetActive(true);
+                this.LoadingBar.SetActive(false);
                 return;
             }
 
@@ -167,6 +170,11 @@ namespace Assets.Scripts
         public void HomeButtonClicked()
         {
             SceneManager.LoadSceneAsync("Menu");
+        }
+
+        public void NotificationButtonClicked()
+        {
+            SceneManager.LoadSceneAsync("Leaderboard");
         }
     }
 }
